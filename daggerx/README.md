@@ -89,7 +89,7 @@ No API costs, No servers needed – **100% self-hosted and secure**.
 DaggerX is open-source! Feel free to submit pull requests on GitHub.  
 
 Made with ❤️ by the DaggerX Team. 🚀  
-
+https://dagax.vercel.app/
 ---
 
 
