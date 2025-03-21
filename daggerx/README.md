@@ -1,4 +1,3 @@
-Here's your refined **README** with a dedicated section for **BTC donations** and a more professional look.  
 
 ---
 
