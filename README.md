@@ -89,5 +89,3 @@ No API costs, No servers needed – **100% self-hosted and secure**.
 Made with ❤️ by the DaggerX Team. 🚀  
 
 ---
-
-Let me know if you need further refinements! 🔥
