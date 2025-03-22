@@ -87,5 +87,5 @@ No API costs, No servers needed – **100% self-hosted and secure**.
 
 
 Made with ❤️ by the DaggerX Team. 🚀  
-https://dagax.vercel.app/
+https://daggerx.vercel.app/
 ---
