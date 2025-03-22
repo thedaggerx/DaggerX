@@ -1,7 +1,7 @@
 
 ---
 
-# 🔥 DaggerX - Ultra-Secure Hashing & Encryption Library 🔥  
+# 🔥 DaggerX - Ultra-Secure Hashing & Encryption Library (PHP)🔥  
 
 DaggerX is an **open-source** password hashing and encryption library designed for **maximum security**.  
 It ensures that even the platform owner **cannot decrypt data** without the correct secret key.  
