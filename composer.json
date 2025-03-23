@@ -10,6 +10,14 @@
     "require": {
         "php": ">=8.0"
     },
+    "authors": [
+        {
+            "name": "DaggerX Team",
+            "homepage": "https://daggerx.vercel.app",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true
 }
