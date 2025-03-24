@@ -11,5 +11,10 @@ if (!$encryptedMessage || !$devKey) {
 }
 
 $decryptedMessage = DaggerX::decryptMessage($encryptedMessage, $devKey);
+if ($decryptedMessage === false) {
+    echo json_encode(["error" => "Decryption failed. Invalid key or corrupted data."]);
+    exit;
+}
+
 echo json_encode(["decrypted_message" => $decryptedMessage]);
 ?>
