@@ -1,7 +1,6 @@
+## 🔐 DaggerX V3 Security Policy
 
-## 🔐 DaggerX Security Policy
-
-Welcome to DaggerX — a cutting-edge PHP library for secure hashing and encryption. This document outlines the security principles, developer responsibilities, and best practices to maintain the integrity of encrypted data. 
+Welcome to DaggerX V3 — a cutting-edge PHP library for secure hashing and encryption. This document outlines the security principles, developer responsibilities, and best practices to maintain the integrity of encrypted data. 
 
 ### 🚨 **Key Principle**  
 - **The Developer Key Holds Absolute Authority.**  
@@ -11,7 +10,7 @@ Welcome to DaggerX — a cutting-edge PHP library for secure hashing and encrypt
 ---
 
 ## 🏗️ **How DaggerX Ensures Security**
-DaggerX leverages modern cryptographic standards:
+DaggerX V3 leverages modern cryptographic standards:
 - **Argon2id** for memory-hard password hashing.  
 - **SHA3-512** for secure peppering and key derivation.  
 - **AES-256-GCM** for authenticated message encryption.  
@@ -21,18 +20,18 @@ These algorithms are designed to resist brute force and cryptographic attacks wh
 ---
 
 ## 🔑 **The Role of the Developer Key**
-The **Developer Key** is the core of DaggerX's security model.  
+The **Developer Key** is the core of DaggerX V3's security model.  
 - It is **exclusively used** for:
   - **Password Hashing:** Salting and peppering.
   - **Message Encryption:** Key derivation and authentication.
 - **Without the correct developer key:**
   - No data can be decrypted or verified.
   - No password can be validated.
-  
+
 ---
 
 ## ⚠️ **What Could Go Wrong?**
-DaggerX is cryptographically secure, but human error can compromise your entire system.  
+DaggerX V3 is cryptographically secure, but human error can compromise your entire system.  
 
 ### 1. **Key Exposure**  
 - **Risk:** Storing keys in plain text, source code, or insecure locations.  
@@ -59,7 +58,7 @@ DaggerX is cryptographically secure, but human error can compromise your entire 
 ---
 
 ## 🛡️ **Why It's the Developer’s Responsibility**
-DaggerX is built with strong cryptographic primitives, but it **cannot** protect against poor key management.  
+DaggerX V3 is built with strong cryptographic primitives, but it **cannot** protect against poor key management.  
 - If your key is compromised, **it's not DaggerX's fault**.  
 - If you fail to store or rotate keys securely, **it's not DaggerX's fault**.  
 - DaggerX cannot decrypt or recover data without the correct key — **only you can**.
@@ -81,17 +80,17 @@ DaggerX is built with strong cryptographic primitives, but it **cannot** protect
 ---
 
 ## 🔒 **No Backdoors, No Exceptions**
-DaggerX offers:
+DaggerX V3 offers:
 - **No master key**
 - **No recovery mechanism**
 - **No external access to your data**
 
-If you lose your developer key, **DaggerX cannot help you recover the data**. This is a deliberate security feature to ensure your sensitive data is protected at all costs.
+If you lose your developer key, **DaggerX V3 cannot help you recover the data**. This is a deliberate security feature to ensure your sensitive data is protected at all costs.
 
 ---
 
 ## 🤝 **Reporting Security Issues**
-If you discover any security vulnerabilities in DaggerX itself (excluding key handling issues), please create an issue or contact us directly. 
+If you discover any security vulnerabilities in DaggerX V3 itself (excluding key handling issues), please create an issue or contact us directly. 
 
 thedaggerxofficial@gmail.com
 
@@ -100,12 +99,13 @@ We take security seriously and will work to resolve any valid concerns promptly.
 ---
 
 ## 🚀 **In Summary**  
-- **DaggerX is Secure by Design.**  
+- **DaggerX V3 is Secure by Design.**  
 - **The Developer Key is the Ultimate Authority.**  
 - **Improper Handling is the Sole Risk Factor.**
 
-By following best practices, you can ensure DaggerX remains an impenetrable shield for your sensitive data.  
+By following best practices, you can ensure DaggerX V3 remains an impenetrable shield for your sensitive data.  
 
 ---
 **Built for security. Trusted by developers.**
 https://daggerx.vercel.app/
+
