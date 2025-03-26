@@ -1,14 +1,10 @@
----
-
 # 🔥 **DaggerX V3** — The Fastest, Strongest, PHP Security Library 🔥
 
-DaggerX is an **open-source** password hashing and encryption library designed for **unbreakable security**.  
-It ensures that even the platform owner **cannot decrypt data** without the correct secret key.  
-With V3, DaggerX is now the **fastest, strongest** security library for PHP developers, offering key rotation, dual encryption modes, and optimized performance without compromising security.
+DaggerX is an **open-source** password hashing and encryption library designed for **unbreakable security**. It ensures that even the platform owner **cannot decrypt data** without the correct secret key. With V3, DaggerX is now the **fastest, strongest** security library for PHP developers, offering key rotation, dual encryption modes, and optimized performance without compromising security.
 
 ---
 
-## 🚀 **What's New in V3**  
+## 🚀 **What's New and Added in V3**
 
 ✅ **Key Rotation Support** —  
 - Seamlessly rotate your developer key (`$devKey`) for both password hashes and encrypted messages.  
@@ -26,13 +22,25 @@ With V3, DaggerX is now the **fastest, strongest** security library for PHP deve
 - Deterministic key derivation with **SHA3-512** for both hashing and encryption.  
 - HMAC (SHA3-512) for AES-256-CBC ensures integrity.  
 
+✅ **Session-Based Entropy (New)** —  
+- New function `setSessionUsage()` for incorporating session IDs or random bytes for better entropy.  
+- Toggle session usage based on environment (CLI or Web).  
+
+✅ **Argon2id Customization (New)** —  
+- Added support for customizing Argon2id parameters such as `memory_cost`, `time_cost`, and `threads`.  
+- Optimize for your hardware and security needs.  
+
+✅ **Key Derivation Separation (New)** —  
+- Separate key derivation logic for hashing and encryption.  
+- Improves maintainability and modularity.  
+
 ✅ **Feared by Attackers** —  
 - Combines Argon2id, AES-256, and SHA3-512 with key rotation to create an impenetrable security layer.  
 - A library that attackers will dread facing.
 
 ---
 
-##  **Installation** (For PHP Developers)  
+## **Installation** (For PHP Developers)
 
 Install via **Composer**:  
 ```sh
@@ -158,6 +166,9 @@ echo $hash;
 - Faster Argon2id parameters for real-world use without sacrificing security.  
 - Hardware-accelerated AES encryption for speed.
 
+**Session-Based Entropy:**  
+- Improved randomness using session IDs or random bytes.
+
 **Feared by Attackers:**  
 - A combination of modern cryptography, key rotation, and robust design makes DaggerX a nightmare for attackers.
 
@@ -171,6 +182,4 @@ DaggerX is free and open-source. If you find it useful, consider donating to sup
 
 Every donation helps keep DaggerX secure, fast, and feared by attackers for everyone.  
 Made with ❤️ by the DaggerX Team.  
-[https://daggerx.vercel.app/](https://daggerx.vercel.app/)  
-
----
+[https://daggerx.vercel.app/](https://daggerx.vercel.app/)
