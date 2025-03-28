@@ -353,7 +353,7 @@ Session Usage: DaggerX v3.0.0 uses session IDs for entropy in password hashing b
 
 Developer Key: The $devKey must be the same for both hashing/verification and encryption/decryption. Store it securely (e.g., in an environment variable) and ensure it's consistent across your application.
 
-Database Column Lengths: Ensure the password column is VARCHAR(1024) and the name column (if encrypted) is VARCHAR(512) to avoid truncation issues, which can cause login failures.
+Database Column Lengths: Ensure the password column is atleast (1024) and the name column (if encrypted) should be atleast (512) to avoid truncation issues, which can cause login failures.
 
 
 ---
