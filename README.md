@@ -166,9 +166,9 @@ CREATE TABLE users (
 ```
 
 ## Important Notes on Column Lengths:
-The password column must be VARCHAR(1024) to accommodate the full base64-encoded hash (typically ~350-400 characters). A shorter length (e.g., VARCHAR(255)) will truncate the hash, causing verifyPassword to fail.
+The password column should be atleast VARCHAR(1024) to accommodate the full base64-encoded hash (typically ~350-400 characters). A shorter length (e.g., VARCHAR(255)) will truncate the hash, causing verifyPassword to fail.
 
-The name column should be VARCHAR(512) to store the base64-encoded encrypted name, which can be longer than the plaintext name (e.g., ~160 characters for a short name like "John Doe").
+The name column should be atleast VARCHAR(512) to store the base64-encoded encrypted name, which can be longer than the plaintext name (e.g., ~160 characters for a short name like "John Doe").
 
 Registration Example (register.php)
 ```
