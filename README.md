@@ -155,7 +155,7 @@ Sensitive data (e.g., the user's name) is encrypted with encryptMessage during r
 ## Database Schema
 Create a users table to store user data:
 sql
-```
+```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(512) NOT NULL,  -- Stores encrypted name
@@ -171,7 +171,7 @@ The password column should be atleast VARCHAR(1024) to accommodate the full base
 The name column should be atleast VARCHAR(512) to store the base64-encoded encrypted name, which can be longer than the plaintext name (e.g., ~160 characters for a short name like "John Doe").
 
 Registration Example (register.php)
-```
+```php
 
 <?php
 require 'vendor/autoload.php';
@@ -256,7 +256,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </html>
 ```
 Login Example (login.php)
-```
+```php
 <?php
 session_start();
 require 'vendor/autoload.php';
@@ -341,7 +341,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </html>
 ```
 Logout Example (logout.php)
-```
+```php
 <?php
 session_start();
 session_destroy();
