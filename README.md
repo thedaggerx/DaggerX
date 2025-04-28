@@ -404,5 +404,11 @@ DaggerX is free and open-source. If you find it useful, consider donating to sup
 [bc1qlza24cwwxlmtxm87lq7hltkya93aff6d5q496p]  
 
 Every donation helps keep DaggerX secure, fast, and feared by attackers for everyone.  
+
+
+![Security Badge](https://img.shields.io/badge/security-enterprise%20grade-brightgreen?style=flat-square&logo=lock)
+![License Badge](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Open Source Badge](https://img.shields.io/badge/open--source-yes-important?style=flat-square&logo=github)
+
 Made with ❤️ by the DaggerX Team.  
 [https://daggerx.vercel.app/](https://daggerx.vercel.app/)
