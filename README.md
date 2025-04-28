@@ -351,6 +351,18 @@ exit;
 Key Considerations
 Session Usage: DaggerX v3.0.0 uses session IDs for entropy in password hashing by default. If the session ID changes between registration and login, verification will fail. Disable session usage with DaggerX::setSessionUsage(false) unless you can ensure session consistency (e.g., by persisting the session cookie across requests).
 
+## Session Management with DaggerX
+
+When using DaggerX, it's important to manage sessions properly. To avoid multiple session starts, you should check if a session is already active before calling `session_start()`.
+
+Here’s a simple way to manage sessions safely:
+
+```php
+// Check if session has not started yet
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+```
 Developer Key: The $devKey must be the same for both hashing/verification and encryption/decryption. Store it securely (e.g., in an environment variable) and ensure it's consistent across your application.
 
 Database Column Lengths: Ensure the password column is atleast (1024) and the name column (if encrypted) should be atleast (512) to avoid truncation issues, which can cause login failures.
